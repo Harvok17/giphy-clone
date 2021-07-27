@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="https://giphy.com/static/img/favicon.png"
+      type="image/png"
+    />
+    <title>GIPHY - clone</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="./assets/GIPHY Transparent 270px.png"
+        alt="Logo"
+        class="header__logo"
+      />
+
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Reactions</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Entertainment</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Sports</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Stickers</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-link">Artists</a>
+          </li>
+          <li class="header__menu-item dropdown-btn">
+            <span class="header__menu-link">&#8942;</span>
+            <div class="menu-dropdown">
+              <div class="menu-dropdown__columns">
+                <div class="menu-dropdown__column">
+                  <h2>Categories</h2>
+                  <ul>
+                    <li>GIPHY Studios</li>
+                    <li>Animals</li>
+                    <li>Actions</li>
+                    <li>Anime</li>
+                    <li>Cartoons</li>
+                    <li>Emotions</li>
+                    <li>Food/Drink</li>
+                    <li>Gaming</li>
+                    <li>Holidays/Greetings</li>
+                    <li>Memes</li>
+                    <li>Clips</li>
+                  </ul>
+                </div>
+
+                <div class="menu-dropdown__column">
+                  <h2>Stickers</h2>
+                  <ul>
+                    <li>Originals</li>
+                    <li>Trending</li>
+                    <li>Reactions</li>
+                    <li>Packs</li>
+                  </ul>
+                </div>
+
+                <div class="menu-dropdown__column">
+                  <h2>Apps</h2>
+                  <ul>
+                    <li>GIPHY</li>
+                    <li>GIPHY World</li>
+                    <li>GIPHY Capture</li>
+                  </ul>
+                </div>
+
+                <div class="menu-dropdown__column">
+                  <h2>About</h2>
+                  <ul>
+                    <li>Team</li>
+                    <li>Engineering Blog</li>
+                    <li>GIPHY Arts</li>
+                    <li>Studios</li>
+                    <li>Developers</li>
+                    <li>Labs</li>
+                    <li>FAQ</li>
+                    <li>Support</li>
+                    <li>Jobs</li>
+                    <li>DMCA</li>
+                    <li>Guidelines</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu-dropdown__footer">
+                <div class="menu-dropdown__footer-copyright">
+                  &#169; 2021 GIPHY, Inc.
+                </div>
+                <ul>
+                  <li>Terms of Service</li>
+                  <li>Community Guidelines</li>
+                  <li>Privacy Policy</li>
+                  <li>Copyright</li>
+                  <li>Manage Cookies</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__action-buttons">
+        <button>Upload</button>
+        <button>Create</button>
+      </div>
+
+      <div class="header__user">
+        <img
+          src="https://media.giphy.com/avatars/default4/80h.gif"
+          alt="avatar"
+          class="header__user-image"
+        />
+        <div class="header__user-name">Harvey</div>
+        <span class="header__user-dropdown">&#9660;</span>
+      </div>
+    </header>
+
+    <!-- End of Header -->
+
+    <form class="search">
+      <input
+        type="text"
+        class="search__input"
+        placeholder="Search all the GIFs"
+      />
+      <button type="submit" class="search__button">
+        <img
+          src="https://giphy.com/static/img/search-icon.svg"
+          alt="search-icon"
+        />
+      </button>
+    </form>
+
+    <!-- End of Search field -->
+
+    <h3>Trending GIFs</h3>
+
+    <div class="container">
+      <!-- Loader -->
+      <div class="loader">
+        <div class="spinner">
+          <div class="spinner">
+            <div class="spinner">
+              <div class="spinner">
+                <div class="spinner"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grid -->
+      <div class="gif-grid">
+        <!-- <div class="gif-grid__item">
+          <img
+            src="https://media.giphy.com/media/l41Ys1fQky5raqvMQ/giphy.gif"
+            alt="gif"
+          />
+        </div>
+        <div class="gif-grid__item">
+          <img
+            src="https://media.giphy.com/media/q1kBdDry3xudsp0DDm/giphy.gif"
+            alt="gif"
+          />
+        </div>
+        <div class="gif-grid__item">
+          <img
+            src="https://media.giphy.com/media/y1NixXsYBFJ6Sj3Z4A/giphy.gif"
+            alt="gif"
+          />
+        </div>
+        <div class="gif-grid__item">
+          <img
+            src="https://media.giphy.com/media/GvTQJAEhhSqBjggZ5o/giphy.gif"
+            alt="gif"
+          />
+        </div>
+        <div class="gif-grid__item">
+          <img
+            src="https://media.giphy.com/media/1hqYk0leUMddBBkAM7/giphy.gif"
+            alt="gif"
+          />
+        </div>
+        <div class="gif-grid__item">
+          <img
+            src="https://media.giphy.com/media/cLYAk89lmwapf6mf42/giphy.gif"
+            alt="gif"
+          />
+        </div>
+        <div class="gif-grid__item">
+          <img
+            src="https://media.giphy.com/media/gePUWJ4AXHu92/giphy.gif"
+            alt="gif"
+          />
+        </div>
+        <div class="gif-grid__item">
+          <img
+            src="https://media.giphy.com/media/LTYT5GTIiAMBa/giphy.gif"
+            alt="gif"
+          />
+        </div>
+        <div class="gif-grid__item">
+          <img
+            src="https://media.giphy.com/media/jjRRTugIXD1bymF7Ro/giphy.gif"
+            alt="gif"
+          />
+        </div>
+        <div class="gif-grid__item">
+          <img
+            src="https://media.giphy.com/media/lNByEO1uTbVAikv8oT/giphy.gif"
+            alt="gif"
+          />
+        </div>
+        <div class="gif-grid__item">
+          <img
+            src="https://media.giphy.com/media/7m3gt0iymAiPcWqdiS/giphy.gif"
+            alt="gif"
+          />
+        </div>
+
+        <div class="gif-grid__item">
+          <img
+            src="https://media.giphy.com/media/mXz3v0UdjrNTO/giphy.gif"
+            alt="gif"
+          />
+        </div> -->
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
