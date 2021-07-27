@@ -73,8 +73,11 @@ const showError = () => {
 };
 
 const showSpinner = (bool) => {
-  if (bool) spinner.style.display = "flex";
-  else spinner.style.display = "none";
+  if (bool) {
+    spinner.style.display = "flex";
+  } else {
+    spinner.style.display = "none";
+  }
 };
 
 // EventListeners
